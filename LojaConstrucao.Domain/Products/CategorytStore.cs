@@ -10,17 +10,17 @@ namespace LojaConstrucao.Domain
         {
             _categoryRepository = categoryRepository;
         }
-        public void Store(CategoryDTO dto)
+        public void Store(int id, string name)
         {
-            var category = _categoryRepository.GetById(dto.Id);
+            var category =  id != 0 ?_categoryRepository.GetById(id): null;
             if (category == null)
             {
-                category = new Category(dto.Name);
+                category = new Category(name);
                 _categoryRepository.Save(category);
             }
             else
             {
-                category.Update(dto.Name);
+                category.Update(name);
             }
         }
     }

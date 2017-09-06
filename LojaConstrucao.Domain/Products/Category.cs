@@ -2,9 +2,9 @@
 
 namespace LojaConstrucao.Domain
 {
-    public class Category
+    public class Category : Entity
     {
-        public int Id { get; private set; }
+        protected Category() { }
         public string Name { get; private set; }
 
         public Category(string aName)

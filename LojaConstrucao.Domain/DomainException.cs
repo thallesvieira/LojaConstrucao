@@ -2,7 +2,7 @@
 
 namespace LojaConstrucao.Domain
 {
-    class DomainException : Exception
+    public class DomainException : Exception
     {
         public  DomainException(string error): base(error)
         {

@@ -1,0 +1,13 @@
+{
+  "name": "LojaConstrucao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "dotnet run -p .\\src\\LojaConstrucao.Web\\LojaConstrucao.Web.csproj",
+    "migration": "cd .\\LojaConstrucao.data\\ && dotnet ef --startup-project ..\\LojaConstrucao.web\\LojaConstrucao.web.csproj migrations add",
+    "migration-script": "cd .\\LojaConstrucao.data\\ && dotnet ef --startup-project ..\\LojaConstrucao.web\\LojaConstrucao.web.csproj migrations script",
+    "remove-migration": "cd .\\LojaConstrucao.data\\ && dotnet ef --startup-project ..\\LojaConstrucao.web\\LojaConstrucao.web.csproj migrations remove",
+    "database-update": "cd .\\LojaConstrucao.data\\ && dotnet ef --startup-project ..\\LojaConstrucao.web\\LojaConstrucao.web.csproj database update"
+  }
+}

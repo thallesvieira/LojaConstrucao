@@ -1,13 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
   </PropertyGroup>
-
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
-
   <ItemGroup>
     <Content Include="js\site.js" />
     <Content Include="js\site.min.js" />
@@ -15,6 +12,10 @@
     <Content Include="Style\site.min.css" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\css\site.min.css" />
+    <Content Include="wwwroot\js\jquery.validate.unobtrusive.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\js\jquery.unobtrusive-ajax.min.js" />
     <Content Include="wwwroot\js\site.js" />
     <Content Include="wwwroot\js\site.min.js" />
   </ItemGroup>
@@ -29,5 +30,8 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
-
+  <ItemGroup>
+    <ProjectReference Include="..\LojaConstrucao.DI\LojaConstrucao.DI.csproj" />
+    <ProjectReference Include="..\LojaConstrucao.Domain\LojaConstrucao.Domain.csproj" />
+  </ItemGroup>
 </Project>
