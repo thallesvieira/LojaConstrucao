@@ -7,8 +7,7 @@
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="js\site.js" />
-    <Content Include="js\site.min.js" />
+    <Content Include="Js\site.js" />
     <Content Include="Style\site.css" />
     <Content Include="Style\site.min.css" />
     <Content Include="wwwroot\css\site.css" />
