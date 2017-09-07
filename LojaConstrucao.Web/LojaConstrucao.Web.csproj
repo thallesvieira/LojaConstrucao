@@ -6,19 +6,7 @@
   <PropertyGroup>
     <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
   </PropertyGroup>
-  <ItemGroup>
-    <Content Include="Js\site.js" />
-    <Content Include="Style\site.css" />
-    <Content Include="Style\site.min.css" />
-    <Content Include="wwwroot\css\site.css" />
-    <Content Include="wwwroot\css\site.min.css" />
-    <Content Include="wwwroot\js\jquery.validate.unobtrusive.js">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="wwwroot\js\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="wwwroot\js\site.js" />
-    <Content Include="wwwroot\js\site.min.js" />
-  </ItemGroup>
+  
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore" Version="1.1.2" />
